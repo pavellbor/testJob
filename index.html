@@ -8,6 +8,9 @@
   <title>Главная страница – Арена</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+  </script>
 </head>
 
 <body>
@@ -53,7 +56,7 @@
     <section class="features">
       <div class="features__container container">
         <h2 class="visually-hidden">Преимущества</h2>
-        <div class="features__box">
+        <div class="features__box wow fadeInDown">
           <p class="features__logo-box">
             <img src="img/big-logo.png" width="126" height="130" alt="Логотип">
           </p>
@@ -64,18 +67,18 @@
           </p>
         </div>
         <ul class="features__list">
-          <li class="features__item features__item--technologies">Технологии</li>
-          <li class="features__item features__item--speed">Скорость</li>
-          <li class="features__item features__item--honesty">Честность</li>
-          <li class="features__item features__item--price">Доступные цены</li>
-          <li class="features__item features__item--care">Забота об экологии</li>
+          <li class="features__item features__item--technologies wow fadeInUp" data-wow-delay="1s">Технологии</li>
+          <li class="features__item features__item--speed wow fadeInUp" data-wow-delay="1.5s">Скорость</li>
+          <li class="features__item features__item--honesty wow fadeInUp" data-wow-delay="2s">Честность</li>
+          <li class="features__item features__item--price wow fadeInUp" data-wow-delay="2.5s">Доступные цены</li>
+          <li class="features__item features__item--care wow fadeInUp" data-wow-delay="3s">Забота об экологии</li>
         </ul>
       </div>
     </section>
     <section class="projects">
       <div class="projects__container container">
-        <h2 class="title projects__title">Наши проекты</h2>
-        <ul class="projects__list">
+        <h2 class="title projects__title wow fadeInDown">Наши проекты</h2>
+        <ul class="projects__list wow fadeInUp">
           <li class="projects__item">
             <a class="projects__link" href="#">
               <img src="img/pic-house-for-rent.png" width="386" height="386" alt="Дом аренда">
@@ -109,8 +112,13 @@
   </footer>
   <div id="bg-canvas">
     <canvas id="canvas"></canvas>
-</div>
-<script src="js/main.js"></script>
+  </div>
+  <div class="preloader">
+    <img class="preloader__image" src="img/pic-preloader.png" width="128" height="105">
+    <p class="preloader__title"></p>
+    <p class="preloader__subtitle"></p>
+  </div>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
