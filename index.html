@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="...">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная страница – Арена</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="before-load" class="faded">
+    <div class="before-load-znachok faded">
+      <div class="before-load-image"><img src="/images/zaglushka-triangle.png"></div>
+      <div id="typed-string1">
+        <div class="before-load-first-text">АРЕНА</div>
+      </div>
+      <div id="typed-string2">
+        <div class="before-load-second-text">ГРУППА КОМПАНИЙ</div>
+      </div>
+      <div class="before-load-first-text"><span id="typed1"></span></div>
+      <div class="before-load-second-text"><span id="typed2"></span></div>
+    </div>
+  </div>
+  <header class="page-header">
+    <div class="page-header__container container">
+      <ul class="page-header__social social">
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="#">
+            <span class="visually-hidden">Инстаграмм</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="#">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+      </ul>
+      <div class="page-header__phones phones">
+        <ul class="phones__list">
+          <li class="phones__item">
+            <a class="phones__link phones__link--active" href="tel:+78126333383">8 (812) 633- 33- 83</a>
+          </li>
+          <li class="phones__item">
+            <a class="phones__link" href="tel:+78126333383">8 (812) 633- 33- 83</a>
+          </li>
+        </ul>
+        <button class="phones__order-call" type="button">Заказать звонок</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Группа компаний «АРЕНА»</h1>
+    <section class="features">
+      <div class="features__container container">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <div class="features__box">
+          <p class="features__logo-box">
+            <img src="img/big-logo.png" width="126" height="130" alt="Логотип">
+          </p>
+          <p class="features__details-box">
+            Citius.<br>
+            Vitis.<br>
+            Qualitative
+          </p>
+        </div>
+        <ul class="features__list">
+          <li class="features__item features__item--technologies">Технологии</li>
+          <li class="features__item features__item--speed">Скорость</li>
+          <li class="features__item features__item--honesty">Честность</li>
+          <li class="features__item features__item--price">Доступные цены</li>
+          <li class="features__item features__item--care">Забота об экологии</li>
+        </ul>
+      </div>
+    </section>
+    <section class="projects">
+      <div class="projects__container container">
+        <h2 class="title projects__title">Наши проекты</h2>
+        <ul class="projects__list">
+          <li class="projects__item">
+            <a class="projects__link" href="#">
+              <img src="img/pic-house-for-rent.png" width="386" height="386" alt="Дом аренда">
+              <h3 class="projects__subtitle">Дом аренa</h3>
+            </a>
+          </li>
+          <li class="projects__item">
+            <a class="projects__link" href="#">
+              <img src="img/pic-cleaning.png" width="386" height="386" alt="Клининг">
+              <h3 class="projects__subtitle">Клининг</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__container container">
+      <div class="page-footer__logo logo">
+        <a class="logo__link" href="/">
+          <img src="img/logo.png" width="76" height="77" alt="Логотип Арена">
+        </a>
+        <p class="logo__text">
+          <span>Citius. Vitis. Qualitative</span><br>
+          Быстрее. Дешевле. Качественнее
+        </p>
+      </div>
+      <a class="page-footer__link privacy-policy" href="#">Политика конфиденциальности</a>
+      <a class="page-footer__link copyright" href="#">Разработка и поддержка <span>SILVERDUCK</span></a>
+    </div>
+  </footer>
+  <div id="bg-canvas">
+    <canvas id="canvas"></canvas>
+</div>
+<script src="js/main.js"></script>
+</body>
+
+</html>
